@@ -21,7 +21,7 @@
     "author": "",
     "license": "MIT",
     "devDependencies": {
-        "@sveltejs/vite-plugin-svelte": "2.0.4",
+        "@sveltejs/vite-plugin-svelte": "2.0.3",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/svelte": "^3.2.2",
         "@types/fs-extra": "^11.0.1",
@@ -38,10 +38,11 @@
         "lodash-es": "^4.17.21",
         "resolve": "^1.22.1",
         "sass": "^1.60.0",
-        "svelte": "^3.39.0",
+        "svelte": "^3.57.0",
         "svelte-preprocess": "^5.0.3",
         "svelte2tsx": "^0.6.10",
-        "typescript": "^5.0.2",
+        "tslib": "^2.5.0",
+        "typescript": "^4.9.3",
         "vite": "^4.2.1",
         "vitest": "^0.29.8",
         "webdriverio": "^8.6.9"

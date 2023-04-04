@@ -1,7 +1,30 @@
+<svelte:options immutable={true} />
+
 <script>
-  import { Button } from "pure-ui";
+  import Button from "./components/button.svelte";
+  import Table from "./components/table.svelte";
 </script>
 
-<div class="container">
-  <Button>按钮</Button>
-</div>
+<main>
+  <div />
+  <h1>Vite + Svelte</h1>
+  <Button />
+  <Table />
+  <div class="card" />
+
+  <p>
+    Check out <a
+      href="https://github.com/sveltejs/kit#readme"
+      target="_blank"
+      rel="noreferrer">SvelteKit</a
+    >, the official Svelte app framework powered by Vite!
+  </p>
+
+  <p class="read-the-docs">Click on the Vite and Svelte logos to learn more</p>
+</main>
+
+<style>
+  .read-the-docs {
+    color: #888;
+  }
+</style>

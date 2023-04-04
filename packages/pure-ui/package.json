@@ -1,0 +1,34 @@
+{
+    "name": "pure-ui",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [
+        "pure",
+        "pure-ui",
+        "component library",
+        "ui"
+    ],
+    "license": "MIT",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        },
+        "./locales/*": "./locales/*",
+        "./lib/locales/*": "./locales/*",
+        "./dist/index.css": "./dist/index.css",
+        "./dist/index.min.css": "./dist/index.min.css"
+    },
+    "main": "./dist/index.js",
+    "svelte": "./svelte/index.js",
+    "jsdelivr": "./dist/index.umd.js",
+    "unpkg": "./dist/index.umd.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "locales",
+        "svelte"
+    ]
+}

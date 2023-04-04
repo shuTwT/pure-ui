@@ -1,0 +1,19 @@
+{
+    "name": "@pure-ui/docs",
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "scripts": {
+        "dev": "vite"
+    },
+    "dependencies": {
+        "docsify": "4.13.0",
+        "pure-ui": "workspace:*"
+    },
+    "devDependencies": {
+        "vite": "^4.2.1"
+    }
+}

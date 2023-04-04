@@ -1,0 +1,18 @@
+{
+    "files": [],
+    "references": [
+        {
+            "path": "packages/pure-ui"
+        },
+        {
+            "path": "packages/react"
+        },
+        {
+            "path": "packages/vue"
+        },
+        {
+            "path": "packages/vue-next"
+        }
+    ]
+  }
+  

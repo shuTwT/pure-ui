@@ -10,8 +10,8 @@
     "packageManager": "pnpm@7.3.0",
     "scripts": {
         "test": "vitest",
-        "clean": "rimraf packages/*/tsconfig.tsbuildinfo && rimraf packages/*/dist",
-        "build": "node scripts/build.mjs && tsc --build",
+        "clean": "rm -rf packages/*/tsconfig.tsbuildinfo && rm -rf packages/*/dist",
+        "build": "pnpm clean && node scripts/build.mjs && tsc --build",
         "dev": "pnpm --filter playground dev",
         "docs:dev": "pnpm run -C docs dev",
         "docs:build": "pnpm run -C docs build"

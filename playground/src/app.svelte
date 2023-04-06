@@ -9,6 +9,7 @@
   import PureMenuItem from "./components/pure-menu-item.svelte";
   import PureSubmenu from "./components/pure-submenu.svelte";
   import PureButton from "./components/pure-button.svelte";
+  import PurePagination from "./components/pure-pagination.svelte";
   const tableData = [
     {
       name: "a1",
@@ -138,6 +139,10 @@
         <PureMenuItem index="4">Orders</PureMenuItem>
       </PureMenu>
     </div>
+  </div>
+  <h2>Pagination</h2>
+  <div class="wrap">
+    <PurePagination />
   </div>
 </main>
 

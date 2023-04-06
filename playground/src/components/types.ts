@@ -3,7 +3,7 @@ import { SvelteComponent } from "svelte";
 export interface PureUiLocale {}
 export interface PureUiProps {}
 export interface ButtonLocale extends PureUiLocale {
-  defaultValue: string;
+  defaultValue?: string;
 }
 export interface LoadingProps extends PureUiProps {
   type?: "circle"|"arrow";
@@ -40,17 +40,55 @@ export interface ButtonProps extends PureUiProps {
   disabled?: boolean;
 }
 export interface TableProps extends PureUiProps{
-    data:any[]
-    thead:string
+    data?:any[]
+    thead?:string
 }
 export interface MenuProps extends PureUiProps{
-    mode:"horizontal" | "vertical"
+    mode?:"horizontal" | "vertical"
 }
 export interface MenuItemProps extends PureUiProps{
-    index:string|null
-    disabled:boolean
+    index?:string|null
+    disabled?:boolean
 }
 export interface SubmenuProps extends PureUiProps{
-    index:string|null
-    disabled:boolean
+    index?:string|null
+    disabled?:boolean
+}
+export interface Pagination extends PureUiProps{
+    /**
+     * 是否为分页按钮添加背景色
+     */
+    background?:boolean
+    /**
+     * 每页显示条目个数
+     */
+    pageSize?:number
+    /**
+     * 总条目数
+     */
+    total?:number
+    /**
+     * 总页数
+     */
+    pageCount?:number
+    /**
+     * 当前页
+     */
+    currentPage?:number
+    /**
+     * page-size改变时触发
+     */
+    sizeChange?:Function
+    /**
+     * current-change改变时触发
+     */
+    currentChange?:Function
+    /**
+     * 用户点击上一页按钮时触发
+     */
+    prevClick?:Function
+    /**
+     * 用户点击下一页按钮时触发
+     */
+    nextClick?:Function
 }

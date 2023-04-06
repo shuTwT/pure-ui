@@ -123,4 +123,8 @@
   .pure-button:not([disabled], .is-loading):hover {
     filter: brightness(1.2);
   }
+  .pure-button :global(.pure-loading) {
+    left: -0.5em;
+    top: -0.2em;
+  }
 </style>

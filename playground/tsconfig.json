@@ -1,6 +1,6 @@
 {
   "extends": "../tsconfig-base.json",
-  "include": ["src/**/*.d.ts","src/**/*.ts","src/**/*.js", "src/locales/*.json"],
+  "include": ["src","src/**/*.d.ts","src/**/*.ts","src/**/*.js", "src/locales/*.json"],
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,

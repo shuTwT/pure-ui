@@ -1,0 +1,1 @@
+<i class="pure-icon" />

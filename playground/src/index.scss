@@ -1,0 +1,46 @@
+:root {
+    --primary-color: green;
+    --primary-bg: #fff;
+    --shadow: 2px 2px 15px rgba(0, 0, 0, .15);
+    --primary-bg-secondary: #f0f0f0;
+    --primary-bg-dark: rgba(0, 0, 0, .25);
+    --primary-color-light: color-mix(in srgb, var(--primary-color), 90%, #fff);
+    --primary-color-dark: color-mix(in srgb, var(--primary-color), 90%, #000);
+    --border-color: #d9d9d9;
+    --success-color: #52c41a;
+    --warning-color: #faad14;
+    --error-color: #f4615c;
+    --info-color: #1890ff;
+    --danger-color: #ff7875;
+    --font-size: 14px;
+    --text-color: rgba(0, 0, 0, .88);
+    --text-color-secondary: rgba(0, 0, 0, .45);
+    --border-radius: 4px;
+    --pure-color-primary: rgb(65, 100, 220);
+    --pure-color-primary-light: skyblue;
+    --pure-font-size: 14px;
+    --pure-border-radius: 4px;
+    --pure-border-width: 1px;
+    --pure-border-style: solid;
+    --pure-border-color: #dcdfe6;
+    --pure-border: var(--pure-border-width) var(--pure-border-style) var(--pure-border-color);
+    --pure-transition-duration: .3s;
+}
+
+.pure-button {
+    animation: throttle 2s step-end forwards;
+}
+
+.pure-button:active {
+    animation: none;
+}
+
+@keyframes throttle {
+    from {
+        pointer-events: none;
+    }
+
+    to {
+        pointer-events: all;
+    }
+}

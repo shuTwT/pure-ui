@@ -2,47 +2,75 @@
 
 <script lang="ts">
   import type { TableProps as Props } from "./types";
-  export let data: Props["data"] = [];
+  export let thead: Props["thead"] = "";
+  const theads = thead.split("-");
 </script>
 
 <table class="pure-table">
   <thead>
     <tr>
-      <slot />
+      <slot name="header">
+        {#if thead != ""}
+          {#each theads as head}
+            <th class="thead">{head}</th>
+          {/each}
+        {/if}
+      </slot>
     </tr>
   </thead>
-  <tbody>
-    {#each data as item, index}
-      <tr>
-        {#each Object.values(item) as subItem}
-          <td> {subItem} </td>
-        {/each}
-      </tr>
-    {/each}
-  </tbody>
+  <tbody><slot /></tbody>
 </table>
 
 <style>
   .pure-table {
+    --columns: 4;
+    position: relative;
     width: 100%;
     color: #666;
     border-collapse: collapse;
     background-color: #fff;
+    display: flex;
+    line-height: 1.5;
+    flex-direction: column;
   }
-
-  .pure-table tbody td {
+  .pure-table thead tr {
     position: relative;
-    padding: 9px 15px !important;
-    overflow: hidden;
-    font-size: 14px;
-    text-overflow: ellipsis;
-    text-align: center;
-    white-space: nowrap;
-    border: 1px solid #e6e6e6;
+    display: grid;
+    font-weight: bold;
+    grid-template-columns: repeat(var(--columns), 1fr);
   }
-
-  .pure-table tbody tr:nth-child(odd) {
-    text-align: center;
-    background-color: #f7f7f7;
+  .pure-table tbody > :global(tr) {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+  }
+  .pure-table tbody > :global(tr::before) {
+    content: "";
+    position: absolute;
+    background-color: #ebeef5;
+    z-index: 3;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    box-sizing: border-box;
+  }
+  .pure-table tbody > :global(tr td) {
+    position: relative;
+    padding: 0.625em;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  .pure-table tr::before {
+    content: "";
+    position: absolute;
+    background-color: #ebeef5;
+    z-index: 3;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    box-sizing: border-box;
   }
 </style>

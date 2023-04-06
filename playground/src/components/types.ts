@@ -41,6 +41,7 @@ export interface ButtonProps extends PureUiProps {
 }
 export interface TableProps extends PureUiProps{
     data:any[]
+    thead:string
 }
 export interface MenuProps extends PureUiProps{
     mode:"horizontal" | "vertical"

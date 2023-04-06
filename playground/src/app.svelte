@@ -4,11 +4,11 @@
   import Loading from "./components/pure-loading.svelte";
   import Button from "./components/pure-button.svelte";
   import Table from "./components/pure-table.svelte";
-  import TableColumn from "./components/pure-table-column.svelte";
   import Dialog from "./components/pure-dialog.svelte";
   import PureMenu from "./components/pure-menu.svelte";
   import PureMenuItem from "./components/pure-menu-item.svelte";
   import PureSubmenu from "./components/pure-submenu.svelte";
+  import PureButton from "./components/pure-button.svelte";
   const tableData = [
     {
       name: "a1",
@@ -79,10 +79,17 @@
   </div>
   <h2>Table</h2>
   <div class="wrap">
-    <Table data={tableData}>
-      <TableColumn label="姓名" />
-      <TableColumn label="性别" />
-      <TableColumn label="年龄" />
+    <Table thead="名字-性别-年龄-操作">
+      {#each tableData as item}
+        <tr>
+          {#each Object.values(item) as subItem}
+            <td>{subItem}</td>
+          {/each}
+          <td>
+            <PureButton type="danger">删除</PureButton>
+          </td>
+        </tr>
+      {/each}
     </Table>
   </div>
   <h2>Dialog</h2>

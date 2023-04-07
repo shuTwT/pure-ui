@@ -1,42 +1,94 @@
-import { SvelteComponent } from "svelte"
+import { SvelteComponent } from "svelte";
 
-export interface PureUiLocale{
-
+export interface PureUiLocale {}
+export interface PureUiProps {}
+export interface ButtonLocale extends PureUiLocale {
+  defaultValue?: string;
 }
-export interface PureUiProps{
-
-}
-export interface ButtonLocale extends PureUiLocale{
-    defaultValue:string
+export interface LoadingProps extends PureUiProps {
+  type?: "circle"|"arrow";
 }
 export interface ButtonProps extends PureUiProps {
+  /**
+   * 按钮类型语义化
+   */
+  type?: "default" | "primary" | "success" | "info" | "warning" | "danger";
+  /**
+   * i18n
+   * @defaultValue en
+   */
+  locale?: Partial<PureUiLocale>;
+  /**
+   * button value
+   */
+  value?: string;
+  /**
+   * handle click
+   */
+  click?: () => void;
+  /**
+   * 加载状态
+   */
+  loading?: boolean;
+  /**
+   * 图标组件
+   */
+  icon?: string | SvelteComponent;
+  /**
+   * 禁用状态
+   */
+  disabled?: boolean;
+}
+export interface TableProps extends PureUiProps{
+    data?:any[]
+    thead?:string
+}
+export interface MenuProps extends PureUiProps{
+    mode?:"horizontal" | "vertical"
+}
+export interface MenuItemProps extends PureUiProps{
+    index?:string|null
+    disabled?:boolean
+}
+export interface SubmenuProps extends PureUiProps{
+    index?:string|null
+    disabled?:boolean
+}
+export interface Pagination extends PureUiProps{
     /**
-     * 按钮类型语义化
+     * 是否为分页按钮添加背景色
      */
-    type?:'default'|'primary'|'success'|'info'|'warming'|'danger'
+    background?:boolean
     /**
-     * i18n
-     * @defaultValue en
+     * 每页显示条目个数
      */
-    locale?:Partial<PureUiLocale>
+    pageSize?:number
     /**
-     * button value
+     * 总条目数
      */
-    value?:string
+    total?:number
     /**
-     * handle click
+     * 总页数
      */
-    click?:()=>void
+    pageCount?:number
     /**
-     * 加载状态
+     * 当前页
      */
-    loading?:boolean
+    currentPage?:number
     /**
-     * 图标组件
+     * page-size改变时触发
      */
-    icon?:string|SvelteComponent
+    sizeChange?:Function
     /**
-     * 禁用状态
+     * current-change改变时触发
      */
-    disabled?:boolean 
+    currentChange?:Function
+    /**
+     * 用户点击上一页按钮时触发
+     */
+    prevClick?:Function
+    /**
+     * 用户点击下一页按钮时触发
+     */
+    nextClick?:Function
 }

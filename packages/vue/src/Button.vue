@@ -14,7 +14,7 @@ export default {
         }
     },
     mounted() {
-        const button = new pureUi.Button({
+        const button = new pureUi.PureButton({
             target: this.$el,
             props: this.$props,
         })

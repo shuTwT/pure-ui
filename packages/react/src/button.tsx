@@ -5,13 +5,13 @@ export interface ButtonProps extends pureUi.ButtonProps{
     onClick?(value:string):void
 }
 export const Button:React.FC<ButtonProps> = ({onChange,...props})=>{
-    const ed=useRef<pureUi.Button>()
+    const ed=useRef<pureUi.PureButton>()
     const el=useRef<HTMLDivElement>(null)
     const onChangeRef=useRef<ButtonProps['onChange']>()
     const onClickRef=useRef<ButtonProps['onClick']>()
     useEffect(()=>{
         if(!el.current) return
-        const button=new pureUi.Button({
+        const button=new pureUi.PureButton({
             target:el.current,
             props
         })

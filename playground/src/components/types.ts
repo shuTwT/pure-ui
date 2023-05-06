@@ -1,13 +1,18 @@
-import { SvelteComponent } from "svelte";
 
+import { SvelteComponent } from "svelte";
+import PureLoading from "./pure-loading.svelte";
+export interface LoadingProps2 extends PureUiProps {
+        type?: "circle"|"arrow";
+}
+export declare module PureLoading{
+    
+}
 export interface PureUiLocale {}
 export interface PureUiProps {}
 export interface ButtonLocale extends PureUiLocale {
   defaultValue?: string;
 }
-export interface LoadingProps extends PureUiProps {
-  type?: "circle"|"arrow";
-}
+
 export interface ButtonProps extends PureUiProps {
   /**
    * 按钮类型语义化

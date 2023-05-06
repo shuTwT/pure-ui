@@ -13,6 +13,7 @@
         "clean": "rm -rf packages/*/tsconfig.tsbuildinfo && rm -rf packages/*/dist",
         "build": " node scripts/build.mjs && tsc --build",
         "build2": "pnpm clean && node scripts/build.mjs && tsc --build",
+        "build3": "pnpm -C packages/pure-ui build",
         "dev": "pnpm --filter playground dev",
         "docs:dev": "pnpm run -C docs dev",
         "docs:build": "pnpm run -C docs build"
@@ -37,11 +38,12 @@
         "lodash-es": "^4.17.21",
         "resolve": "^1.22.1",
         "sass": "^1.60.0",
-        "svelte": "^3.57.0",
+        "svelte": "^3.58.0",
         "svelte-preprocess": "^5.0.3",
         "svelte2tsx": "^0.6.10",
         "tslib": "^2.5.0",
-        "typescript": "^4.9.3",
+        "turbo": "^1.8.8",
+        "typescript": "^4.9.4",
         "vite": "^4.2.1",
         "vitest": "^0.29.8",
         "webdriverio": "^8.6.9"

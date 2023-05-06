@@ -1,6 +1,5 @@
-<script lang="ts">
-  import type { LoadingProps as Props } from "./types";
-  export let type: Props["type"] = "circle";
+<script>
+  export let type = "circle";
 </script>
 
 <i

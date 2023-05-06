@@ -2,13 +2,12 @@
 
 <script>
   import Loading from "./components/pure-loading.svelte";
-  import Button from "./components/pure-button.svelte";
+  import { PureButton } from "pure-ui";
   import Table from "./components/pure-table.svelte";
   import Dialog from "./components/pure-dialog.svelte";
   import PureMenu from "./components/pure-menu.svelte";
   import PureMenuItem from "./components/pure-menu-item.svelte";
   import PureSubmenu from "./components/pure-submenu.svelte";
-  import PureButton from "./components/pure-button.svelte";
   import PurePagination from "./components/pure-pagination.svelte";
   const tableData = [
     {
@@ -53,30 +52,30 @@
   <h2>Button</h2>
   <h3>basic</h3>
   <div class="wrap">
-    <Button type="default">default</Button>
-    <Button type="primary">primary</Button>
-    <Button type="success">success</Button>
-    <Button type="info">info</Button>
-    <Button type="warning">warning</Button>
-    <Button type="danger">danger</Button>
+    <PureButton type="default">default</PureButton>
+    <PureButton type="primary">primary</PureButton>
+    <PureButton type="success">success</PureButton>
+    <PureButton type="info">info</PureButton>
+    <PureButton type="warning">warning</PureButton>
+    <PureButton type="danger">danger</PureButton>
   </div>
   <h3>dsabled</h3>
   <div class="wrap">
-    <Button type="default" disabled={true}>default</Button>
-    <Button type="primary" disabled={true}>primary</Button>
-    <Button type="success" disabled={true}>success</Button>
-    <Button type="info" disabled={true}>info</Button>
-    <Button type="warning" disabled={true}>warning</Button>
-    <Button type="danger" disabled={true}>danger</Button>
+    <PureButton type="default" disabled={true}>default</PureButton>
+    <PureButton type="primary" disabled={true}>primary</PureButton>
+    <PureButton type="success" disabled={true}>success</PureButton>
+    <PureButton type="info" disabled={true}>info</PureButton>
+    <PureButton type="warning" disabled={true}>warning</PureButton>
+    <PureButton type="danger" disabled={true}>danger</PureButton>
   </div>
   <h3>loading</h3>
   <div class="wrap">
-    <Button type="default" loading={true}>default</Button>
-    <Button type="primary" loading={true}>primary</Button>
-    <Button type="success" loading={true}>success</Button>
-    <Button type="info" loading={true}>info</Button>
-    <Button type="warning" loading={true}>warning</Button>
-    <Button type="danger" loading={true}>danger</Button>
+    <PureButton type="default" loading={true}>default</PureButton>
+    <PureButton type="primary" loading={true}>primary</PureButton>
+    <PureButton type="success" loading={true}>success</PureButton>
+    <PureButton type="info" loading={true}>info</PureButton>
+    <PureButton type="warning" loading={true}>warning</PureButton>
+    <PureButton type="danger" loading={true}>danger</PureButton>
   </div>
   <h2>Table</h2>
   <div class="wrap">
@@ -95,7 +94,7 @@
   </div>
   <h2>Dialog</h2>
   <div class="wrap">
-    <Dialog><Button type="primary" slot="open" /></Dialog>
+    <Dialog><PureButton type="primary" slot="open" /></Dialog>
   </div>
   <h2>Menu</h2>
   <h3>top-menu</h3>

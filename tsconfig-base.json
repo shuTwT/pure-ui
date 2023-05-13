@@ -10,7 +10,10 @@
       "resolveJsonModule": true,
       "composite": true,
       "emitDeclarationOnly": true,
-      
+      "rootDir": ".",
+      "paths": {
+        "@pure-ui/*":["package/*"]
+      }
     },
     "exclude": ["**/_tests__"]
   }

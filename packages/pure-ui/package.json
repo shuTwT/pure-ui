@@ -31,9 +31,6 @@
         "locales",
         "svelte"
     ],
-    "devDependencies": {
-        "svelte": "^3.39.0"
-    },
     "scripts": {
         "build": "vite build"
     }

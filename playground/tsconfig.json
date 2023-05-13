@@ -1,6 +1,6 @@
 {
   "extends": "../tsconfig-base.json",
-  "include": ["src","src/**/*.d.ts","src/**/*.ts","src/**/*.js", "src/locales/*.json"],
+  "include": ["src","src/**/*.d.ts","src/**/*.ts","src/**/*.js"],
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
@@ -8,11 +8,8 @@
     "resolveJsonModule": true,
     "sourceMap":true,
     "strict": false,
-    "rootDir": "src",
-    "outDir": "dist",
     "allowJs": true,
     "checkJs": true,
     "isolatedModules": true,
-  },
-  "references": [{ "path": "../packages/pure-ui" }]
+  }
 }

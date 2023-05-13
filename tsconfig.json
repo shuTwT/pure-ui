@@ -13,6 +13,9 @@
         {
             "path": "packages/vue-next"
         }
+    ],
+    "include": [
+        "types/global.d.ts"
     ]
   }
   

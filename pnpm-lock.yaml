@@ -3,6 +3,13 @@ lockfileVersion: '6.0'
 importers:
 
   .:
+    dependencies:
+      '@pure-ui/components':
+        specifier: workspace:*
+        version: link:packages/components
+      '@pure-ui/locale':
+        specifier: workspace:*
+        version: link:packages/locale
     devDependencies:
       '@sveltejs/vite-plugin-svelte':
         specifier: 2.0.3
@@ -93,11 +100,11 @@ importers:
         specifier: ^4.2.1
         version: 4.2.1(@types/node@18.15.11)(sass@1.60.0)
 
-  packages/pure-ui:
-    devDependencies:
-      svelte:
-        specifier: ^3.39.0
-        version: 3.58.0
+  packages/components: {}
+
+  packages/locale: {}
+
+  packages/pure-ui: {}
 
   packages/react:
     dependencies:

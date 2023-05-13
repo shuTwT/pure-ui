@@ -1,14 +1,14 @@
 <svelte:options immutable={true} />
 
 <script>
-  import Loading from "./components/pure-loading.svelte";
-  import { PureButton } from "pure-ui";
-  import Table from "./components/pure-table.svelte";
-  import Dialog from "./components/pure-dialog.svelte";
-  import PureMenu from "./components/pure-menu.svelte";
-  import PureMenuItem from "./components/pure-menu-item.svelte";
-  import PureSubmenu from "./components/pure-submenu.svelte";
-  import PurePagination from "./components/pure-pagination.svelte";
+  import Loading from "@pure-ui/components/loading";
+  import PureButton from "@pure-ui/components/button";
+  import Table from "@pure-ui/components/table";
+  import Dialog from "@pure-ui/components/dialog";
+  import PureMenu from "@pure-ui/components/menu";
+  import PureMenuItem from "@pure-ui/components/menu-item";
+  import PureSubmenu from "@pure-ui/components/submenu";
+  import PurePagination from "@pure-ui/components/pagination";
   const tableData = [
     {
       name: "a1",

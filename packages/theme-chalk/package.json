@@ -1,0 +1,26 @@
+{
+    "name": "@pure-ui/theme-chalk",
+    "version": "1.0.0",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "",
+        "directory": "packages/theme-chalk"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/index.css",
+            "require": "./dist/index.css"
+        },
+        "./dist/index.css": "./dist/index.css"
+    },
+    "license": "MIT",
+    "main": "./dist/index.css",
+    "unpkg": "./dist/index.css",
+    "jsdelivr": "./dist/index.css",
+    "style": "./dist/index.css",
+    "scripts": {
+        "build": "sass src:dist --no-source-map",
+        "postbuild": "sass src:./../pure-ui/theme-chalk --no-source-map"
+    }
+}

@@ -3,7 +3,7 @@
 <script lang="ts">
   import type { TableProps as Props } from "@pure-ui/components/types";
   export let thead: Props["thead"] = "";
-  const theads = thead.split("-");
+  const theads = thead!.split("-");
 </script>
 
 <table class="pure-table">

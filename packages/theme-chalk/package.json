@@ -20,7 +20,7 @@
     "jsdelivr": "./dist/index.css",
     "style": "./dist/index.css",
     "scripts": {
-        "build": "sass src:dist --no-source-map",
+        "build": "node build.cjs",
         "postbuild": "sass src:./../pure-ui/theme-chalk --no-source-map"
     }
 }

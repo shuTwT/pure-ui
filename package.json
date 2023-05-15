@@ -7,13 +7,11 @@
         "node": ">=16"
     },
     "private": "true",
-    "packageManager": "pnpm@7.3.0",
+    "packageManager": "pnpm@8.3.1",
     "scripts": {
         "test": "vitest --ui",
         "clean": "rm -rf packages/*/tsconfig.tsbuildinfo && rm -rf packages/*/dist",
         "build": " node scripts/build.mjs && tsc --build",
-        "build2": "pnpm clean && node scripts/build.mjs && tsc --build",
-        "build3": "pnpm -C packages/pure-ui build",
         "dev": "pnpm --filter playground dev",
         "docs:dev": "pnpm run -C docs dev",
         "docs:build": "pnpm run -C docs build"

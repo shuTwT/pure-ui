@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Pagination as Props } from "./types";
+  import type { Pagination as Props } from "@pure-ui/components/types";
   export let background: Props["background"] = false;
 </script>
 

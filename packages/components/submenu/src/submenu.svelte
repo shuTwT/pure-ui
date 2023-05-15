@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { SubmenuProps as Props } from "@pure-ui/components/types";
   import { getContext } from "svelte";
-  import { PureMenu } from "@pure-ui/components";
+  import { PuMenu } from "@pure-ui/components";
   export let index: Props["index"] = null;
   export let disabled: Props["disabled"] = false;
   let activeIndex;
@@ -28,9 +28,9 @@
   <div class="pure-submenu-title" on:click={handleClick} on:keydown={() => {}}>
     <slot name="title" />
   </div>
-  <PureMenu>
+  <PuMenu>
     <slot />
-  </PureMenu>
+  </PuMenu>
 </li>
 
 <style>

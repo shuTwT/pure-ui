@@ -1,20 +1,21 @@
 {
-    "compilerOptions": {
-      "skipLibCheck": true,
-      "target": "ESNext",
-      "module": "ESNext",
-      "jsx": "react",
-      "strict": true,
-      "moduleResolution": "Node",
-      "esModuleInterop": true,
-      "resolveJsonModule": true,
-      "composite": true,
-      "emitDeclarationOnly": true,
-      "rootDir": ".",
-      "paths": {
-        "@pure-ui/*":["package/*"]
-      }
-    },
-    "exclude": ["**/_tests__"]
-  }
-  
+  "compilerOptions": {
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "target": "ES2018",
+    "module": "ESNext",
+    "jsx": "react",
+    "strict": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "composite": true,
+    "emitDeclarationOnly": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@pure-ui/*": ["package/*"]
+    }
+  },
+  "exclude": ["**/_tests__"]
+}

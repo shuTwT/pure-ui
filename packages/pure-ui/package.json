@@ -18,9 +18,10 @@
         "./locales/*": "./locales/*",
         "./lib/locales/*": "./locales/*",
         "./dist/index.css": "./dist/index.css",
-        "./dist/index.min.css": "./dist/index.min.css"
+        "./dist/index.min.css": "./dist/index.min.css",
+        "./es/style.css":"./es/style.css"
     },
-    "main": "./dist/index.js",
+    "main": "./lib/index.cjs",
     "svelte": "./svelte/index.js",
     "jsdelivr": "./dist/index.umd.js",
     "unpkg": "./dist/index.umd.js",
@@ -29,7 +30,8 @@
     "files": [
         "dist",
         "locales",
-        "svelte"
+        "svelte",
+        "es","lib"
     ],
     "scripts": {
         "build": "vite build"

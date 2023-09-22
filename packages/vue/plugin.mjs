@@ -1,2 +1,1 @@
-//export { createVuePlugin } from 'vite-plugin-vue2'
-export { default as createVuePlugin } from "@vitejs/plugin-vue2"
+export { default as createVue3Plugin } from '@vitejs/plugin-vue'

@@ -2,7 +2,4 @@
     "extends": "../../tsconfig-base.json",
     "include": ["src", "src/locales/*.json"],
     "compilerOptions": { "rootDir": "src", "outDir": "dist" },
-    "vueCompilerOptions": {
-        "target": 2.7
-    }
   }

@@ -7,13 +7,6 @@
         "url": "",
         "directory": "packages/theme-chalk"
     },
-    "exports": {
-        ".": {
-            "import": "./dist/index.css",
-            "require": "./dist/index.css"
-        },
-        "./dist/index.css": "./dist/index.css"
-    },
     "license": "MIT",
     "main": "./dist/index.css",
     "unpkg": "./dist/index.css",

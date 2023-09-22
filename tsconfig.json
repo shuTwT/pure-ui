@@ -9,9 +9,6 @@
         },
         {
             "path": "packages/vue"
-        },
-        {
-            "path": "packages/vue-next"
         }
     ],
     "include": [

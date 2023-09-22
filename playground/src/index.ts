@@ -1,4 +1,4 @@
-import "pure-ui/dist/index.css";
+import "@pure-ui/theme-chalk/src/index.scss";
 import "./index.scss";
 import App from "./app.svelte";
 

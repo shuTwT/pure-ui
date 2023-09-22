@@ -8,6 +8,7 @@ export default defineConfig({
         }),
     ],
     build: {
+        minify:false,
         rollupOptions: {
             output: [
                 {
@@ -29,7 +30,7 @@ export default defineConfig({
                     exports: "named",
                     dir: "dist"
                 },
-            ]
+            ],
         },
         lib: {
             entry: resolve(__dirname, "index.ts"),

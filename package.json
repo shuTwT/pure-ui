@@ -10,7 +10,7 @@
     "packageManager": "pnpm@8.3.1",
     "scripts": {
         "test": "vitest --ui",
-        "build": "pnpm turbo build --no-daemon",
+        "build": "pnpm --filter pure-ui build",
         "dev": "pnpm --filter playground dev",
         "docs:dev": "pnpm run -C docs dev",
         "docs:build": "pnpm run -C docs build"
@@ -20,10 +20,13 @@
     "license": "MIT",
     "dependencies": {
         "@pure-ui/components": "workspace:*",
-        "@pure-ui/locale": "workspace:*"
+        "@pure-ui/locale": "workspace:*",
+        "@pure-ui/theme-chalk":"workspace:*",
+        "pure-ui":"workspace:*"
     },
     "devDependencies": {
         "@sveltejs/vite-plugin-svelte": "2.4.6",
+        "prettier":"^3.0.3",
         "sass": "^1.62.1",
         "svelte": "^3.58.0",
         "svelte-preprocess": "^5.0.3",

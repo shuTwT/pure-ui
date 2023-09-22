@@ -12,8 +12,5 @@
     "dependencies": {
         "docsify": "4.13.0",
         "pure-ui": "workspace:*"
-    },
-    "devDependencies": {
-        "vite": "^4.2.1"
     }
 }

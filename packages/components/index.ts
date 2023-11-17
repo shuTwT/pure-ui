@@ -7,3 +7,4 @@ export * from "./menu-item";
 export * from "./pagination";
 export * from "./submenu";
 export * from "./table";
+export * from "./switch";

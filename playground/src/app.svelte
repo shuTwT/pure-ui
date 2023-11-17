@@ -9,6 +9,7 @@
   import PureMenuItem from "@pure-ui/components/menu-item";
   import PureSubmenu from "@pure-ui/components/submenu";
   import PurePagination from "@pure-ui/components/pagination";
+  import {PuSwitch} from "@pure-ui/components"
   const tableData = [
     {
       name: "a1",
@@ -48,7 +49,6 @@
     <Loading type="circle" />
     <Loading type="arrow" />
   </div>
-
   <h2>Button</h2>
   <h3>basic</h3>
   <div class="wrap">
@@ -64,6 +64,10 @@
   <div class="wrap">
     <PureButton type="default" loading={true}>default</PureButton>
     <PureButton type="primary" loading={true}>primary</PureButton>
+  </div>
+  <h2>switch</h2>
+  <div class="wrap">
+    <PuSwitch></PuSwitch>
   </div>
   <h2>Table</h2>
   <div class="wrap">

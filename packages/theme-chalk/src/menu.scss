@@ -1,0 +1,16 @@
+.pure-menu {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding-left: 0;
+  background-color: var(--md-sys-color-surface-variant);
+  box-sizing: border-box;
+  border-right: solid 1px #fff;
+  user-select: none;
+}
+.pure-menu--horizontal {
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: solid 1px #dcdcdc;
+  border-right: none;
+}

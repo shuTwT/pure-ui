@@ -1,11 +1,11 @@
 .pure-button {
-    --pure-button-text-color: #606060;
+    --pure-button-text-color: var(--md-sys-color-primary);
     --pure-button-hover-text-color: var(--pure-color-primary);
     --pure-button-font-weight: 500;
-    --pure-button-bg-color: var(--primary-bg);
+    --pure-button-bg-color: transparent;
     --pure-button-hover-bg-color: var(--pure-color-primary-light);
-    --pure-button-border-color: #dcdfe6;
-    --pure-button-hover-border-color: var(--pure-color-primary-light);
+    --pure-button-border-color: var(--md-sys-color-outline);
+    --pure-button-box-shadow:var(--md-sys-elevation-0);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -28,50 +28,14 @@
     padding: 8px 15px;
     font-size: var(--pure-font-size);
     border-radius: var(--pure-border-radius);
+    box-shadow: var(--pure-button-box-shadow);
 }
 
-.pure-button:hover,
-.pure-button:focus {
-    color: var(--pure-button-hover-text-color);
-    border-color: var(--pure-button-hover-border-color);
-}
 
 .pure-button.pure-button-primary {
-    --pure-button-text-color: #fff;
-    --pure-button-bg-color: var(--pure-color-primary);
+    --pure-button-text-color: var(--md-sys-color-on-primary);
+    --pure-button-bg-color: var(--md-sys-color-primary);
     --pure-button-border-color: var(--pure-color-primary);
-    --pure-button-hover-text-color: #fff;
-    --pure-button-hover-border-color: #fff;
-}
-
-.pure-button.pure-button-success {
-    --pure-button-text-color: #fff;
-    --pure-button-bg-color: var(--success-color);
-    --pure-button-border-color: var(--success-color);
-    --pure-button-hover-text-color: #fff;
-    --pure-button-hover-border-color: #fff;
-}
-
-.pure-button.pure-button-info {
-    --pure-button-text-color: #fff;
-    --pure-button-bg-color: var(--info-color);
-    --pure-button-border-color: var(--info-color);
-    --pure-button-hover-text-color: #fff;
-    --pure-button-hover-border-color: #fff;
-}
-
-.pure-button.pure-button-warning {
-    --pure-button-text-color: #fff;
-    --pure-button-bg-color: var(--warning-color);
-    --pure-button-border-color: var(--warning-color);
-    --pure-button-hover-text-color: #fff;
-    --pure-button-hover-border-color: #fff;
-}
-
-.pure-button.pure-button-danger {
-    --pure-button-text-color: #fff;
-    --pure-button-bg-color: var(--danger-color);
-    --pure-button-border-color: var(--danger-color);
     --pure-button-hover-text-color: #fff;
     --pure-button-hover-border-color: #fff;
 }
@@ -85,7 +49,7 @@
     filter: brightness(1.2);
 }
 
-.pure-button :global(.pure-loading) {
-    left: -0.5em;
+.pure-button .pure-loading {
+    left: -0.6em;
     top: -0.2em;
 }

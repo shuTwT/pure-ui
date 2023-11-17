@@ -54,28 +54,16 @@
   <div class="wrap">
     <PureButton type="default">default</PureButton>
     <PureButton type="primary">primary</PureButton>
-    <PureButton type="success">success</PureButton>
-    <PureButton type="info">info</PureButton>
-    <PureButton type="warning">warning</PureButton>
-    <PureButton type="danger">danger</PureButton>
   </div>
   <h3>dsabled</h3>
   <div class="wrap">
     <PureButton type="default" disabled={true}>default</PureButton>
     <PureButton type="primary" disabled={true}>primary</PureButton>
-    <PureButton type="success" disabled={true}>success</PureButton>
-    <PureButton type="info" disabled={true}>info</PureButton>
-    <PureButton type="warning" disabled={true}>warning</PureButton>
-    <PureButton type="danger" disabled={true}>danger</PureButton>
   </div>
   <h3>loading</h3>
   <div class="wrap">
     <PureButton type="default" loading={true}>default</PureButton>
     <PureButton type="primary" loading={true}>primary</PureButton>
-    <PureButton type="success" loading={true}>success</PureButton>
-    <PureButton type="info" loading={true}>info</PureButton>
-    <PureButton type="warning" loading={true}>warning</PureButton>
-    <PureButton type="danger" loading={true}>danger</PureButton>
   </div>
   <h2>Table</h2>
   <div class="wrap">
@@ -151,7 +139,7 @@
     display: flex;
     gap: 15px;
     align-items: center;
-    outline: 1px dashed #000;
+    outline: 1px dashed ;
     padding: 10px;
   }
   .sidebar {

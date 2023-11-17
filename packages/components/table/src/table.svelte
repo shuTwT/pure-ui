@@ -26,9 +26,9 @@
     --columns: 4;
     position: relative;
     width: 100%;
-    color: #666;
+    color: var(--md-sys-color-surface);
     border-collapse: collapse;
-    background-color: #fff;
+    background-color: var(--md-sys-color-surface-variant);
     display: flex;
     line-height: 1.5;
     flex-direction: column;
@@ -47,7 +47,7 @@
   .pure-table tbody > :global(tr::before) {
     content: "";
     position: absolute;
-    background-color: #ebeef5;
+    background-color: var(--md-sys-color-outline);
     z-index: 3;
     left: 0;
     bottom: 0;
@@ -65,7 +65,7 @@
   .pure-table tr::before {
     content: "";
     position: absolute;
-    background-color: #ebeef5;
+    background-color: var(--md-sys-color-outline);
     z-index: 3;
     left: 0;
     bottom: 0;

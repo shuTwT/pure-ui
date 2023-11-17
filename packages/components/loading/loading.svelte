@@ -10,6 +10,7 @@
 
 <style>
   .pure-loading {
+    --pure-loading-color-border:var(--md-sys-color-primary);
     position: relative;
     display: block;
     width: 1em;
@@ -17,13 +18,13 @@
     margin: auto;
   }
   .pure-loading-circle {
-    border: 2px solid #000;
+    border: 2px solid var(--pure-loading-color-border);
     border-top-color: transparent;
     border-radius: 100%;
     animation: circle infinite 0.75s linear;
   }
   .pure-loading-arrow-circle {
-    border: 2px solid #000;
+    border: 2px solid var(--pure-loading-color-border);
     border-top-color: transparent;
     border-bottom-color: transparent;
     border-radius: 100%;
@@ -34,7 +35,7 @@
     position: absolute;
     top: 0.9em;
     left: -0.1em;
-    border-top: 5px solid #000;
+    border-top: 5px solid  var(--pure-loading-color-border);
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
     content: "";

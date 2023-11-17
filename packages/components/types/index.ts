@@ -57,10 +57,6 @@ export interface SubmenuProps extends PureUiProps {
 }
 export interface Pagination extends PureUiProps {
   /**
-   * 是否为分页按钮添加背景色
-   */
-  background?: boolean;
-  /**
    * 每页显示条目个数
    */
   pageSize?: number;

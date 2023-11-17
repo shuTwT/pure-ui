@@ -2,14 +2,14 @@
 
 <script>
   import Loading from "@pure-ui/components/loading";
-  import PureButton from "@pure-ui/components/button";
+  import PureButton, { PuButton } from "@pure-ui/components/button";
   import Table from "@pure-ui/components/table";
   import Dialog from "@pure-ui/components/dialog";
   import PureMenu from "@pure-ui/components/menu";
   import PureMenuItem from "@pure-ui/components/menu-item";
   import PureSubmenu from "@pure-ui/components/submenu";
   import PurePagination from "@pure-ui/components/pagination";
-  import {PuSwitch} from "@pure-ui/components"
+  import {PuSwitch,PuDropdown} from "@pure-ui/components"
   const tableData = [
     {
       name: "a1",
@@ -83,6 +83,12 @@
         </tr>
       {/each}
     </Table>
+  </div>
+  <h2>dropdown</h2>
+  <div class="wrap">
+    <PuDropdown>
+        <PuButton>dropdown</PuButton>
+    </PuDropdown>
   </div>
   <h2>Dialog</h2>
   <div class="wrap">

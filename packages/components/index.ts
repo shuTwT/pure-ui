@@ -8,3 +8,4 @@ export * from "./pagination";
 export * from "./submenu";
 export * from "./table";
 export * from "./switch";
+export * from "./dropdown"

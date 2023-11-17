@@ -1,0 +1,1 @@
+import "@pure-ui/theme-chalk/src/loading.scss";

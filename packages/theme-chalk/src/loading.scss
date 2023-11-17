@@ -1,15 +1,4 @@
-<script>
-  export let type = "circle";
-</script>
-
-<i
-  class="pure-loading"
-  class:pure-loading-circle={type == "circle"}
-  class:pure-loading-arrow-circle={type == "arrow"}
-/>
-
-<style>
-  .pure-loading {
+.pure-loading {
     --pure-loading-color-border:var(--md-sys-color-primary);
     position: relative;
     display: block;
@@ -63,4 +52,3 @@
       transform: rotate(0);
     }
   }
-</style>

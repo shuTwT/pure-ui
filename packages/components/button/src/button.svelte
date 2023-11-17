@@ -4,7 +4,7 @@
   import { PuLoading } from "@pure-ui/components/loading";
   import { en } from "@pure-ui/locale";
   import type { ButtonProps as Props } from "@pure-ui/components/types";
-  import { onMount, createEventDispatcher, onDestroy, tick } from "svelte";
+  import { onMount } from "svelte";
   export let type: Props["type"] = "default";
   export let value: Props["value"] = "";
   export let click: Props["click"] = () => {};

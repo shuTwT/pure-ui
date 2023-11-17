@@ -1,4 +1,9 @@
 {
     "extends": "../../tsconfig-base.json",
+    "compilerOptions": {
+        "types": [
+            "svelte"
+        ]
+    },
     "include": ["./**/*.svelte","./**/*.ts","./**/*.d.ts"]
   }

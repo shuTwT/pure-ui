@@ -1,4 +1,4 @@
-<svelte:options immutable={true} />
+<svelte:options immutable={true} tag="pu-button" />
 
 <script lang="ts">
   import { PuLoading } from "@pure-ui/components/loading";

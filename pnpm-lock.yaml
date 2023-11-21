@@ -24,6 +24,9 @@ importers:
       '@sveltejs/vite-plugin-svelte':
         specifier: 2.5.2
         version: registry.npmmirror.com/@sveltejs/vite-plugin-svelte@2.5.2(svelte@3.59.2)(vite@4.4.9)
+      lodash-es:
+        specifier: ^4.17.21
+        version: registry.npmmirror.com/lodash-es@4.17.21
       prettier:
         specifier: ^3.0.3
         version: 3.0.3
@@ -1054,6 +1057,12 @@ packages:
     name: kleur
     version: 4.1.5
     engines: {node: '>=6'}
+    dev: true
+
+  registry.npmmirror.com/lodash-es@4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==, registry: https://packages.aliyun.com/654218b30ea7e947ac5119b2/npm/npm-registry/, tarball: https://registry.npmmirror.com/lodash-es/-/lodash-es-4.17.21.tgz}
+    name: lodash-es
+    version: 4.17.21
     dev: true
 
   registry.npmmirror.com/magic-string@0.30.3:

@@ -1,3 +1,4 @@
+<svelte:options immutable={true} tag="pu-loading"/>
 <script>
   export let type = "circle";
 </script>

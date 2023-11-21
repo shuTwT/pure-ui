@@ -1,3 +1,4 @@
+<svelte:options immutable={true} tag="pu-menu"/>
 <script lang="ts">
   import type { MenuProps as Props } from "@pure-ui/components/types";
   import { setContext } from "svelte";

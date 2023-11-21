@@ -27,20 +27,4 @@
     --pure-transition-duration: .3s;
 }
 
-.pure-button {
-    animation: throttle 2s step-end forwards;
-}
 
-.pure-button:active {
-    animation: none;
-}
-
-@keyframes throttle {
-    from {
-        pointer-events: none;
-    }
-
-    to {
-        pointer-events: all;
-    }
-}

@@ -4,6 +4,9 @@ import { defineConfig } from "vite";
 export default defineConfig({
     plugins: [
         svelte({
+            compilerOptions:{
+                customElement:true
+            },
             preprocess: vitePreprocess(),
         }),
     ],
@@ -16,12 +19,6 @@ export default defineConfig({
                     entryFileNames: "index.mjs",
                     exports: "named",
                     dir: "es"
-                },
-                {
-                    format: "cjs",
-                    entryFileNames: "index.cjs",
-                    exports: "named",
-                    dir: "lib"
                 },
                 {
                     format: "umd",

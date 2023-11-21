@@ -11,6 +11,7 @@
     "scripts": {
         "test": "vitest --ui",
         "build": "pnpm --filter pure-ui build",
+        "build:theme":"pnpm --filter theme-chalk build",
         "dev": "pnpm --filter playground dev",
         "docs:dev": "pnpm run -C docs dev",
         "docs:build": "pnpm run -C docs build"
@@ -26,6 +27,7 @@
     },
     "devDependencies": {
         "@sveltejs/vite-plugin-svelte": "2.5.2",
+        "lodash-es":"^4.17.21",
         "prettier":"^3.0.3",
         "sass": "^1.62.1",
         "svelte": "^3.59.2",

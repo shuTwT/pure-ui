@@ -6,14 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+    <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 </head>
 
 <body>
     <div id="app">加载中</div>
     <script type="module">
+        import {PuButton} from "pure-ui"
         import "docsify/themes/vue.css"
         import "docsify/lib/docsify.js"
-        window.$docsify = {}
+        import "docsify/lib/plugins/search.min.js"
+        import "docsify/lib/plugins/zoom-image.min.js"
+        window.$docsify = {
+            name:"pure-ui",
+            repo:'https://github.com/shuTwT/pure-ui',
+            search:{
+                paths:'auto',
+                placeholder:'搜索',
+                noData:'找不到结果',
+                depth:3
+            }
+        }
+        new PuButton({target:document.body})
     </script>
 </body>
 

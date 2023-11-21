@@ -1,3 +1,4 @@
+<svelte:options immutable={true} tag="pu-submenu"/>
 <script lang="ts">
   import type { SubmenuProps as Props } from "@pure-ui/components/types";
   import { getContext } from "svelte";

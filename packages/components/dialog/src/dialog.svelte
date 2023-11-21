@@ -1,4 +1,5 @@
-<svelte:options immutable={true} tag="pu-dialog"/>
+<!-- svelte-ignore  -->
+<svelte:options immutable={true} customElement="pu-dialog"/>
 <script lang="ts">
   import { PuButton } from "../../button";
   import {debounce} from 'lodash-es'
@@ -13,9 +14,9 @@
 </script>
 <div on:click={() => (isOpen = true)} on:keyup={() => {}}>
     <slot name="open" />
-  </div>
+</div>
 <div class="pure-dialog" class:pure-dialog--open={isOpen}>
-    <div class="overlay" on:click={closeDialog} on:keydown={closeDialog}></div>
+    <div class="overlay" on:click={()=>closeDialog()}  on:keydown={()=>closeDialog()}></div>
   <div class="pure-dialog__wrap">
     <div class="pure-dialog__title">
       <slot name="title">dialog title</slot>

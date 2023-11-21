@@ -1,1 +1,1 @@
-export * from "./pure-icon.svelte";
+export {default as PuIcon} from "./pure-icon.svelte";

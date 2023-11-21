@@ -1,4 +1,4 @@
-<svelte:options immutable={true} tag="pu-dropdown"/>
+<svelte:options immutable={true} customElement="pu-dropdown"/>
 
 <label class="pure-dropdown">
     <input type="checkbox">

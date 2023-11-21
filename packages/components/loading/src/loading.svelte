@@ -1,4 +1,4 @@
-<svelte:options immutable={true} tag="pu-loading"/>
+<svelte:options immutable={true} customElement="pu-loading"/>
 <script>
   export let type = "circle";
 </script>

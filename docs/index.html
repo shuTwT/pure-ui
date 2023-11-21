@@ -13,6 +13,7 @@
 <body>
     <div id="app">加载中</div>
     <script type="module">
+        import "pure-ui/theme-chalk/index.css"
         import {PuButton} from "pure-ui"
         import "docsify/themes/vue.css"
         import "docsify/lib/docsify.js"
@@ -28,7 +29,7 @@
                 depth:3
             }
         }
-        new PuButton({target:document.body})
+        new PuButton()
     </script>
 </body>
 

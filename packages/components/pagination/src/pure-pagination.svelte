@@ -1,4 +1,4 @@
-<svelte:options immutable={true} tag="pu-pagination"/>
+<svelte:options immutable={true} customElement="pu-pagination"/>
 <script lang="ts">
   import type { Pagination as Props } from "@pure-ui/components/types";
   export const total: Props["total"] =undefined;

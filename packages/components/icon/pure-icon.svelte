@@ -1,2 +1,2 @@
-<svelte:options immutable={true} tag="pu-icon"/>
+<svelte:options immutable={true} customElement="pu-icon"/>
 <i class="pure-icon" />

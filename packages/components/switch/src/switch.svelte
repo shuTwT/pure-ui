@@ -1,4 +1,4 @@
-<svelte:options immutable={true} tag="pu-switch"/>
+<svelte:options immutable={true} customElement="pu-switch"/>
 
 <script lang="js"></script>
 

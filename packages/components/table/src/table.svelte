@@ -1,4 +1,4 @@
-<svelte:options immutable={true} tag="pu-table"/>
+<svelte:options immutable={true} customElement="pu-table"/>
 
 <script lang="ts">
   import type { TableProps as Props } from "@pure-ui/components/types";

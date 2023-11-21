@@ -24,10 +24,6 @@ export interface ButtonProps extends PureUiProps {
    */
   value?: string;
   /**
-   * handle click
-   */
-  click?: () => void;
-  /**
    * 加载状态
    */
   loading?: boolean;
@@ -39,6 +35,10 @@ export interface ButtonProps extends PureUiProps {
    * 禁用状态
    */
   disabled?: boolean;
+  /**
+   * 文本按钮
+   */
+  text?:boolean
 }
 export interface TableProps extends PureUiProps {
   data?: any[];

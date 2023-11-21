@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Pagination as Props } from "@pure-ui/components/types";
-  export let total: Props["total"] =undefined;
+  export const total: Props["total"] =undefined;
 </script>
 
 <div class="pure-pagination" >

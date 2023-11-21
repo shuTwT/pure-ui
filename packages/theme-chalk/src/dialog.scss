@@ -1,0 +1,24 @@
+.pure-dialog{
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .overlay{
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1001;
+    }
+    .pure-dialog__wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1002;
+        padding: 2rem;
+        background-color: var(--md-sys-color-surface);
+        border-radius: 1.75rem;
+    }
+}

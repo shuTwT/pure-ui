@@ -4,14 +4,15 @@
   import { PuLoading } from "@pure-ui/components/loading";
   import { en } from "@pure-ui/locale";
   import type { ButtonProps as Props } from "@pure-ui/components/types";
-  import { onMount } from "svelte";
+  import { onMount,createEventDispatcher } from "svelte";
   export let type: Props["type"] = "default";
   export let value: Props["value"] = "";
-  export let click: Props["click"] = () => {};
+//   export let click: Props["click"] = () => {};
   export let locale: Props["locale"] = undefined;
   export let loading: Props["loading"] = false;
   export let icon: Props["icon"] = undefined;
   export let disabled: Props["disabled"] = false;
+  export let text:Props["text"] = false;
   let elButton: HTMLButtonElement;
   $: mergedLocale = { ...en, ...locale };
   onMount(() => {
@@ -29,8 +30,9 @@
   class:pure-button-info={type == "info"}
   class:pure-button-warning={type == "warning"}
   class:pure-button-danger={type == "danger"}
+  class:pure-button--text={text==true}
   {disabled}
-  on:click={click}
+  on:click
   bind:this={elButton}
 >
   {#if loading}
